@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #0400e2c0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ChatCham_Wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+
+.ChatCham_Indicator div {
+    flex: 1;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.ChatCham_Indicator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0400e2e3;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.ChatCham_Indicator .active {
+    background-color: #002c6a57;
+}
+
+.Form_Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 3px 5px;
+}
+
+form h2 {
+   text-transform: capitalize;
+   font-weight: 600;
+   font-size: 18px;
+   color: #000;
+   margin: 10px 0 5px 0;
+}
+
+form span{
+    font-weight: 400;
+    margin: 5px 0;
+    color: #0400e2e3;
+}
+
+form span:nth-child(2){
+   margin: 10px 0;
+}
+
+
+form input {
+    width: 90%;
+    padding: 10px ;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+form input:focus{
+    outline: 1px solid #0400e2e3;
+    border: none;
+}
+
+form input::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+form button {
+    width: 94%;
+    padding: 10px 5px;
+    background-color: #0400e2e3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.6s;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+form button:hover {
+   transform: scale(1.01);
+}
+
+.Register_wrapper{
+    display: none;
+}
+
+.Login_wrapper p{
+    color: #000;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.Register_wrapper p{
+    position: relative;
+}
+
+.Login_wrapper p::before,
+.Register_wrapper p::before{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 175px;
+    height: .5px;
+    background-color: #000;
+    color: #000;
+    z-index: 2;
+}
+
+.Login_wrapper p::after,
+.Register_wrapper p::after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 175px;
+    height: .5px;
+    background-color: #000;
+    color: #000;
+    z-index: 2;
+}
+
+.Others{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin: 5px 0;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #0400e2e3;
+    font-size: 11px;
+
+}
+
+button:hover{
+    background-color: none;
+}
+
+button svg{
+    width: 18px;
+    color: #000;
+    margin-right: 5px;
+}
+
+button a{
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+@media screen and (max-width:400px){
+   
+.Login_wrapper p::before{
+    width: 120px;
+}
+
+.Login_wrapper p::after{
+    width: 120px;
+}
+}
