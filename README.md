@@ -1,6 +1,9 @@
+```markdown
 # Chatcham UI
 
 Chatcham UI is the user interface for the Chatcham live video calling and chatroom platform. It provides the front-end experience for users to interact with the platform's features.
+
+**Demo:** [View Chatcham Interface](https://xhicko.github.io/ChatCham/)
 
 ## Features
 
@@ -54,11 +57,8 @@ To work on the Chatcham UI, follow these steps:
 
 We welcome contributions to the Chatcham UI project. 
 
-
 ## Contact
 
-For questions or support related to the Chatcham UI, please contact me at (mailto:web.by.xhicko@gmail.com).
+For questions or support related to the Chatcham UI, please contact me at [web.by.xhicko@gmail.com](mailto:web.by.xhicko@gmail.com).
+```
 
----
-
-Feel free to further customize this README to include specific details about your project or any additional information you'd like to provide.
