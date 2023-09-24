@@ -53,13 +53,17 @@
     text-align: center;
 }
 
+.Main_window_Top_Right{
+    display: flex;
+    width: 20%;
+}
+
 .Main_window_Top_Right button{
-    background: transparent;
     padding: 7px 5px;
     border: none;
-    background-color: transparent;
-    color: #fff;
-    border: .5px solid #fff;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
     border-radius: 3px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
@@ -192,4 +196,73 @@
   cursor: pointer;
 }
 
+.Side_Window{
+    background-color: #fff;
+    padding:8px 0 0 0;
+}
 
+.Side_Window_First{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #1d1d22fb;
+    padding: 0 0 10px 0;
+}
+
+
+.Side_Window_First button{
+        padding: 7px 5px;
+        border: none;
+        background-color: #1d1d22fb;
+        color: #fff;
+        width: 100%;
+        border-radius: 3px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 0 5px;
+}
+
+.Side_Window_First button:nth-child(2){
+        background-color: #fff;
+        color: #1d1d22fb;
+        border: 2px solid #1d1d22fb;
+}
+
+.Side_Window_First button:nth-child(2) strong{
+        color: #ff0606;
+}
+
+.Side_Window_Second{
+    position: relative;
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 0 20px;
+}
+
+.Side_Window_Second input{
+    width: 100%;
+    padding: 5px 10px;
+    border: .5px solid #1d1d22fb;
+    border-radius: 3px;
+}
+
+.Side_Window_Second input:focus{
+    outline: none;
+}
+
+.Side_Window_Second input::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #1d1d22fb; 
+}
+
+.Side_Window_Second input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.Side_Window_Second svg{
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
