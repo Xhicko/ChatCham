@@ -273,66 +273,542 @@
         </div>
 
         <div class="Side_Window">
-
-            <div class="Side_Window_First">
-                <button>Chat </button>
+            <div class="Side_Window_Indicator">
+                <button> Chat <strong>40</strong></button>
                 <button> Participants <strong>10</strong></button>
             </div>
 
-            <div class="Side_Window_Second">
-                <input type="search" name="#" id="#" placeholder="Search For People">
+            <div class="Side_window_Wrapper">
 
-                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg>
-            </div>
-
-            <div class="Side_Window_Third">
-                <p>On the call</p>
-
-                <div class="Call_Data_Wrapper">
-                    <div class="Call_Data">
-                        <div class="Call_info">
-                            <img src="avatar1.png" alt="avatar1">
-                            <div class="Call_Bio">
-                                <h5>Tariq Mustapha <strong>(You)</strong></h5>
-                                <span>Presenter</span>
-                            </div>
-                        </div>
-    
-                        <div class="loader">
-                            <svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
-                              <title>Audio Wave</title>
-                              <path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                              <path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91" stroke="#fff" stroke-width="2" fill="#fff" />
-                            </svg>
+                <div class="Participants">
+                    <div class="Side_Window_Second">
+                        <form action="#">
+                          <input type="search" name="#" id="#" placeholder="Search For People">
+          
+                          <button type="submit">
+                              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                          </button>
+                        </form>
+                      </div>
+          
+                      <div class="Side_Window_Third">
+                          <p>On the call</p>
+          
+                          <div class="Call_Data_Wrapper">
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar1.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Tariq Mustapha <strong>(You)</strong></h5>
+                                          <span>Presenter</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="loader">
+                                      <svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+                                        <title>Audio Wave</title>
+                                        <path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                        <path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91" stroke="#fff" stroke-width="3" fill="#fff" />
+                                      </svg>
+                                    </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar2.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Susan Fred</h5>
+                                          <span>Director</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar3.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Gabriel Dan</h5>
+                                          <span>Manager</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar4.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Bianca Jobber</h5>
+                                          <span>supervisor</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar5.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>John Dalton</h5>
+                                          <span>Marketer</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar6.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Shannel Moses</h5>
+                                          <span>Accountant</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                                <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar2.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Susan Fred</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar3.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Gabriel Dan</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar4.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Bianca Jobber</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar5.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>John Dalton</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar6.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Shannel Moses</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
                           </div>
-                          
+          
+                          <p>Invited <strong>10</strong></p>
+          
+                          <div class="Invited_Call_Data_Wrapper">
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar2.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Susan Fred</h5>
+                                          <span>Director</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar3.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Gabriel Dan</h5>
+                                          <span>Manager</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar4.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Bianca Jobber</h5>
+                                          <span>supervisor</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar5.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>John Dalton</h5>
+                                          <span>Marketer</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar6.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Shannel Moses</h5>
+                                          <span>Accountant</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                                <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar2.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Susan Fred</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar3.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Gabriel Dan</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar4.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Bianca Jobber</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar5.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>John Dalton</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                              <div class="Call_Data">
+                                  <div class="Call_info">
+                                      <img src="avatar6.png" alt="avatar1">
+                                      <div class="Call_Bio">
+                                          <h5>Shannel Moses</h5>
+                                          <span>Listener</span>
+                                      </div>
+                                  </div>
+              
+                                  <div class="Svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                  </div>
+                                    
+                              </div>
+          
+                          </div>
+                      </div>
+                </div>
+
+                <div class="Chat">
+                    <div class="Chat_header">
+                        <p>Chatcham Live chat</p>
                     </div>
-                    <div class="Call_Data">
-                        <div class="Call_info">
-                            <img src="avatar2.png" alt="avatar1">
-                            <div class="Call_Bio">
-                                <h5>Susan Fred</h5>
-                                <span>Listener</span>
+
+                    <div class="Chats">
+
+                        <div class="Chat_Box">
+                            <img src="avatar3.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>Gabriel Dan</h3>
+                                <h3>11:56 AM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
                             </div>
                         </div>
-    
-                        <div class="Call_Svg">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                              </svg> -->
-                          </div>
-                          
+                        
+                        <div class="Chat_Box">
+                            <img src="avatar5.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>John Dalton</h3>
+                                <h3>12:00 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="Chat_Box">
+                            <img src="avatar4.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>Bianca Jobber</h3>
+                                <h3>12:33 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="Chat_Box_You">
+                            <div class="Your_Chat">
+                               <div class="You_Chat_Bio">
+                                <h3>01:00 PM</h3>
+                                <h3>You</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <img src="avatar1.png" alt="avatar3">
+                        </div>
+                             
+                        <div class="Chat_Box">
+                            <img src="avatar2.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>Susan Fred</h3>
+                                <h3>01:22 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+
+                        <div class="Chat_Box_You">
+                            <div class="Your_Chat">
+                               <div class="You_Chat_Bio">
+                                <h3>01:25 PM</h3>
+                                <h3>You</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <img src="avatar1.png" alt="avatar3">
+                        </div>
+
+                        <div class="Chat_Box">
+                            <img src="avatar2.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>Susan Fred</h3>
+                                <h3>01:30 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+
+                        <div class="Chat_Box">
+                            <img src="avatar3.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>Gabriel Dan</h3>
+                                <h3>01:40 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="Chat_Box">
+                            <img src="avatar5.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>John Dalton</h3>
+                                <h3>01:45 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="Chat_Box">
+                            <img src="avatar4.png" alt="avatar3">
+                            <div class="Chat_info">
+                               <div class="Chat_Bio">
+                                <h3>Bianca Jobber</h3>
+                                <h3>01:50 PM</h3>
+                               </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate debitis porro velit voluptates nesciunt numquam nobis tempore atque laborum?</p>
+                            </div>
+                        </div>
+
+
+                        <div class="Send_Text">
+                            <form action="#">
+                                <textarea name="" id="" cols="29" rows="3">
+                                    write a message...
+                                </textarea>
+
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                                      </svg>
+                                </button>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
+
+
             </div>
 
         </div>

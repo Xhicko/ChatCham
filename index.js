@@ -23,28 +23,26 @@ const videoWrapper = document.querySelector('.Video_Card')
 let grabbed = false
 let startX = 0
 
-videoWrapper.addEventListener('mousedown', (e)=>{
+videoWrapper.addEventListener('mousedown', function(e){
     grabbed = true
     startX = e.clientX
     this.style.cusor = 'grabbing'
+    console.log(startX)
 })
 
-videoWrapper.addEventListener('mouseleave', ()=>{
+videoWrapper.addEventListener('mouseleave', function(e){
     grabbed = false
 })
 
-window.addEventListener('mouseup', ()=>{
+window.addEventListener('mouseup', function(e){
     grabbed = false
     videoWrapper.style.cusor = 'grab'
 })
 
-videoWrapper.addEventListener('mousemove', (e)=>{
+videoWrapper.addEventListener('mousemove', function(e){
     if(!grabbed){
         return
     }
 
     this.scrollLeft += startX - e.clientX
 })
-
-
-

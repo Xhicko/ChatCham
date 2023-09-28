@@ -198,18 +198,21 @@
 
 .Side_Window{
     background-color: #fff;
-    padding:8px 0 0 0;
+    padding:4px 0 0 0;
 }
 
-.Side_Window_First{
+.Side_Window_Indicator{
     display: flex;
     width: 100%;
     border-bottom: 2px solid #1d1d22fb;
     padding: 0 0 10px 0;
 }
 
+.Participants{
+    display: none;
+}
 
-.Side_Window_First button{
+.Side_Window_Indicator button{
         padding: 7px 5px;
         border: none;
         background-color: #1d1d22fb;
@@ -222,14 +225,15 @@
         margin: 0 5px;
 }
 
-.Side_Window_First button:nth-child(2){
+.Side_Window_Indicator button:nth-child(2){
         background-color: #fff;
         color: #1d1d22fb;
         border: 2px solid #1d1d22fb;
 }
 
-.Side_Window_First button:nth-child(2) strong{
+.Side_Window_Indicator button strong{
         color: #ff0606;
+        font-size: 12px;
 }
 
 .Side_Window_Second{
@@ -260,11 +264,23 @@
     -webkit-appearance: none;
 }
 
+.Side_Window_Second button{
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    height: 26px;
+    right: 20px;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
 .Side_Window_Second svg{
     width: 20px;
-    position: absolute;
-    top: 5px;
-    right: 30px;
+    color: #fff;
+    padding: 3px 0 0 0;
 }
 
 .Side_Window_Third{
@@ -280,14 +296,46 @@
     font-weight: 700;
     font-size: 12px;
     margin: 0 0 10px 2px ;
+}
 
+.Side_Window_Third p:nth-last-child(2){
+    margin: 5px 0 10px 2px ;
+}
+
+.Side_Window_Third p:nth-last-child(2) strong{
+   color: #ff0606;
 }
 
 .Call_Data_Wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.Call_Data_Wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.Invited_Call_Data_Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.Invited_Call_Data_Wrapper::-webkit-scrollbar{
+    display: none;
 }
 
 .Call_Data{
@@ -315,9 +363,9 @@
 }
 
 .Call_info img{
-    width: 20%;
+   width: 40px;
     border-radius: 50%;
-    padding: 0 5px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .loader {
@@ -326,14 +374,20 @@
     justify-content: center;
 }
 
-.Call_Svg{
+.Call_Data .Svg{
     background-color: #1d1d22fb;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 
-.Call_Svg svg{
-    width: 20px;
+
+.Call_Data .Svg svg{
     color: #fff;
+    width: 20px;
 }
 
 #wave {
@@ -405,4 +459,179 @@
         transform: scaleY(1);
         transform-origin: 50% 50%;
     }
+}
+
+.Chat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 ;
+    padding: 0 5px;
+}
+
+.Chat_header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chat_header p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+.Chats{
+    margin:2px 0 ;
+    background-color: #1d1d22fb;
+    width: 100%;
+    height: 522px;
+    border-radius:3px;
+    overflow-y: scroll;
+    cursor: pointer;
+    position: relative;
+}
+
+.Chats::-webkit-scrollbar{
+    display: none;
+}
+
+.Chat_Box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Chat_Box img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.Chat_info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 10px;
+}
+
+.Chat_Bio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Chat_Bio h3{
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Chat_info p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-align: justify;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: #141414;
+}
+
+.Chat_Box_You{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Chat_Box_You img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.Your_Chat{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 10px;
+}
+
+.You_Chat_Bio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.You_Chat_Bio h3{
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Your_Chat p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000; 
+    text-align: justify;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+
+.Send_Text{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 60px;
+    width: 290px;
+    background-color: #000000;
+    z-index: 5;
+    border-radius: 3px;
+}
+
+.Send_Text form{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 4px 0 ;
+    padding: 0 5px;
+    border: none;
+}
+
+.Send_Text form textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.Send_Text form textarea{
+   padding:2.5px 10px;
+   resize: none;
+}
+
+.Send_Text form textarea:focus{
+  outline: none;
+}
+
+.Send_Text button{
+    padding: 0 7px ;
+    background: #fff;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.Send_Text svg{
+    width: 20px;
+    color: #1d1d22fb;
 }
