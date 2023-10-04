@@ -6,19 +6,20 @@
     box-sizing: border-box;
 }
 
-.Chatcham_Dashboard_Wrapper{
-    display: grid;
-    grid-template-columns:75% 25%;
-    background-color: #070650e3;
-    height: 100vh;
-}
 
 .Main_window{
     background-color: #1d1d22fb;
-    padding:10px 10px 0 10px;
+    padding: 5px 10px;
+    width: 100%;
+    height: 100vh; /* Use min-height to prevent scaling */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Main_Window_Top{
+    padding: 5px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -75,6 +76,11 @@
 }
 
 
+.Main_window_Top_Right button:hover {
+    background-color: #ce0202;
+    color: #fff;
+    border: none;
+}
 
 .Main_window_Top_Right button:nth-child(2){
     background-color: #ce0202;
@@ -83,24 +89,20 @@
 }
 
 .Main_Window_Center{
-    margin: 5px 0 0 0;
-    position: relative;
     width: 100%;
-    max-width: 100%;
-    height: 0;
-    padding-bottom: 45%; /* 16:9 aspect ratio, half of the container's height */
+    height: 100%; /* Set the height to 100% to fill the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: 3px;
+    position: relative;
 }
 
 .Main_Window_Center video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%; /* Set the video width to 100% */
+    height: 100%; /* Set the video height to 100% to fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 .Main_Window_Bottom {
@@ -112,7 +114,8 @@
     scrollbar-width: none;
     width: 100%;
     cursor: grab;
-
+    position: absolute;
+    bottom: 0;
 }
 
 .Main_Window_Bottom::-webkit-scrollbar{
@@ -121,16 +124,15 @@
 
 .video_Card_Wrapper{
     scroll-snap-align: start;
-    position: relative;
-    margin: 8px 0 0 0 ;
+    margin: 0 5px ;
     user-select: none;
     width: 100%;
+    position: relative;
 }
 
 .video_Card_Wrapper video{
     width: 140px;
     height: 90px;
-    margin: 0 10px  0 0;
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
@@ -138,12 +140,12 @@
 
 .Video_Footer{
     position: absolute;
-    bottom: 1px ;
-    left: 0;
-    width: 90%;
+    bottom:6px;
+    left: 5px;
+    width:130px;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items:center ;
 }
 
 
@@ -151,11 +153,9 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 13px;
     font-weight: 500;
-    margin: 0 0 2px 3px;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
 }
-
 
 .Video_Footer svg{
     background-color: #ffffff;
@@ -163,7 +163,6 @@
     width: 15px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 2px;
 }
 
 .video_Card_Wrapper:active {
@@ -199,6 +198,8 @@
 .Side_Window{
     background-color: #fff;
     padding:4px 0 0 0;
+    display: none;
+    flex-direction: column;
 }
 
 .Side_Window_Indicator{
@@ -210,6 +211,7 @@
 
 .Participants{
     display: none;
+    flex-direction: column;
 }
 
 .Side_Window_Indicator button{
@@ -223,6 +225,19 @@
         font-weight: 700;
         cursor: pointer;
         margin: 0 5px;
+}
+
+.Side_Window_Indicator button strong{
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.Side_Window_Indicator button:nth-child(1) strong{
+    background-color: #fff;
+}
+
+.Side_Window_Indicator button:nth-child(2) strong{
+    background-color: #1d1d22fb;
 }
 
 .Side_Window_Indicator button:nth-child(2){
@@ -388,6 +403,15 @@
 .Call_Data .Svg svg{
     color: #fff;
     width: 20px;
+}
+
+#wave0{
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    fill: #ffffff;
+    background-color: #1d1d22fb;
 }
 
 #wave {

@@ -18,8 +18,8 @@ registerTab.addEventListener('click', () => {
 });
 
 
-const videoWrapper = document.querySelector('.Video_Card')
 
+const videoWrapper = document.querySelector('.Main_Window_Bottom')
 let grabbed = false
 let startX = 0
 
