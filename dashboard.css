@@ -26,41 +26,14 @@
     align-items: center;
 }
 
-.Main_window_First_Left{
+
+.Main_window_Top_Left{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
+    width: 20%;  /* Add Responsiveness Here  */ 
 }
 
-.Main_window_First_Left h4{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 12.5px;
-    font-weight: 300;
-    opacity: .8;
-    margin: 0 ;
-}
-
-.Main_window_First_Left h4:nth-child(2){
-    font-size: 15px;
-    opacity: 1;
-}
-
-.Main_Window_Second_Left{
-    margin: 10px 0;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.Main_window_Top_Right{
-    display: flex;
-    width: 20%;
-}
-
-.Main_window_Top_Right button{
-    padding: 7px 5px;
+.Main_window_Top_Left button{
+    padding: 5px 3px;
     border: none;
     background-color: #fff;
     color: #000;
@@ -69,23 +42,31 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 ;
     transition: background-color .7s ease-in-out,
                 color .7s ease-in-out,
                 border .7s ease-in-out;
 }
 
 
-.Main_window_Top_Right button:hover {
+.Main_window_Top_Left button:hover {
     background-color: #ce0202;
     color: #fff;
     border: none;
 }
 
-.Main_window_Top_Right button:nth-child(2){
+.Main_window_Top_Left button:nth-child(2){
     background-color: #ce0202;
     color: #fff;
     border: none;
+    margin: 0 0 0 10px;
+}
+
+.Main_window_Top_Right svg{
+    width: 30px;
+    color: #fff;
+    cursor: pointer; 
+    margin: 0 5px 0 0;
 }
 
 .Main_Window_Center{
@@ -146,6 +127,7 @@
     display: flex;
     justify-content: space-between;
     align-items:center ;
+    padding: 0 0 2px 0;
 }
 
 
@@ -169,7 +151,7 @@
     cursor: grabbing;
 }
 
-.Main_window_Footer{
+.Main_window_Bottom{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -183,6 +165,9 @@
     background-color: #fff;
     padding:5px 7.5px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .svg_Wrapper:nth-child(5){
