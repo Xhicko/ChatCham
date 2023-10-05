@@ -24,13 +24,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
+.Flash_Messages{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    
+}
+
+.videoOn, .microphoneOn{
+    background-color: #16c216;
+    display: none;
+}
+
+.videoOff, .microphoneOff{
+    background-color: #c21616;
+    display: none;
+}
+
+.message{
+    border-radius: 2px;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    padding: 2px;
+}
+
+.message p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding:2px  5px;
+}
 
 .Main_window_Top_Left{
     display: flex;
     width: 20%;  /* Add Responsiveness Here  */ 
 }
+
 
 .Main_window_Top_Left button{
     padding: 5px 3px;
@@ -79,6 +113,56 @@
     border-radius: 3px;
     position: relative;
 }
+
+.muted{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.muted h3{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px 0 30px 0;
+}
+
+.muted img{
+   width: 20%;
+   border-radius: 50%;
+}
+
+.muted #wave02{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    fill: #ffffff;
+    display: flex;
+}
+
+.no_sound {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    animation: snaky 2s linear infinite; /* Apply the snaky animation */
+}
+
+.no_sound > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #fff;
+    animation: snake 2s linear infinite; /* Apply the snake animation */
+
+}
+
 
 .Main_Window_Center video {
     width: 100%; /* Set the video width to 100% */
@@ -399,6 +483,8 @@
     background-color: #1d1d22fb;
 }
 
+
+
 #wave {
     padding: 4px;
     width: 30px;
@@ -643,4 +729,12 @@
 .Send_Text svg{
     width: 20px;
     color: #1d1d22fb;
+}
+
+
+@media screen and (max-width:600){
+    .Flash_Messages{
+        top: 10px;
+        right: 90px;
+    }
 }
