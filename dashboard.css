@@ -37,11 +37,13 @@
 .videoOn, .microphoneOn{
     background-color: #16c216;
     display: none;
+    flex-direction: row;
 }
 
 .videoOff, .microphoneOff{
     background-color: #c21616;
     display: none;
+    flex-direction: row;
 }
 
 .message{
@@ -760,8 +762,14 @@
 
 @media screen and (max-width:600px){
     .Flash_Messages{
-        top: 10px;
+        top: 12px;
         right: 20px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .Flash_Messages{
+        right: 2px;
     }
 }
 
